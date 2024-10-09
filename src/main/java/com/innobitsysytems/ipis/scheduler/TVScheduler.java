@@ -25,7 +25,7 @@ public class TVScheduler {
 
 	}
 	
-	@Scheduled(fixedRate = 1000)
+//	@Scheduled(fixedRate = 1000)
 	public void scheduleAutoTrainEtaNotification() throws Exception {
 		displayService.autoTrainExpectedTime();	}
 	

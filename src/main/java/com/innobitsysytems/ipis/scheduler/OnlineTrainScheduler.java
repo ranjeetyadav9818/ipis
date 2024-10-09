@@ -35,7 +35,7 @@ public class OnlineTrainScheduler {
 	public StationDetailsRepository stationDetailsRepository;
 
 
-	@Scheduled(fixedRate = 5000)
+//	@Scheduled(fixedRate = 5000)
 	public void scheduleAutoUploadTrain() throws Exception {
 		List<StationDetails> station = stationDetailsRepository.findAll();
 		try
@@ -59,7 +59,7 @@ public class OnlineTrainScheduler {
 		}			
 	}
 
-	@Scheduled(fixedRate = 5000)
+//	@Scheduled(fixedRate = 5000)
 	public void scheduleAutoDeleteTrain() throws Exception {
 		List<StationDetails> station = stationDetailsRepository.findAll();
 		try
@@ -84,7 +84,7 @@ public class OnlineTrainScheduler {
 		
 	}
 
-	@Scheduled(fixedRate = 5000)
+//	@Scheduled(fixedRate = 5000)
 	public void scheduleAutoTadd() throws Exception {
 
 		List<StationDetails> station = stationDetailsRepository.findAll();

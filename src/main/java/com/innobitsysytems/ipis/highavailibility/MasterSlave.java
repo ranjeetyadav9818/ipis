@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class MasterSlave
 {
 
-	@Bean
+//	@Bean
 	public void start() {
 		//sending HeartBeat
 		Timer senderTime = new Timer();

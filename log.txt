@@ -6201,3 +6201,614 @@ java.lang.NullPointerException: Cannot invoke "com.innobitsysytems.ipis.model.Li
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2024-06-13 14:59:29.506  INFO 10808 --- [main] c.innobitsysytems.ipis.IpisApplication   : Starting IpisApplication using Java 17.0.1 on 01HW2104319 with PID 10808 (C:\Users\2606537\Documents\ipis\ipis\target\classes started by 2606537 in C:\Users\2606537\Documents\ipis\ipis)
+2024-06-13 14:59:29.508  INFO 10808 --- [main] c.innobitsysytems.ipis.IpisApplication   : No active profile set, falling back to default profiles: default
+2024-06-13 14:59:29.583  INFO 10808 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 14:59:31.570  INFO 10808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-13 14:59:32.226  INFO 10808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 641 ms. Found 66 JPA repository interfaces.
+2024-06-13 14:59:32.729  INFO 10808 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-06-13 14:59:32.752  INFO 10808 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-06-13 14:59:32.912  INFO 10808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 14:59:32.928  INFO 10808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 14:59:32.930  INFO 10808 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 14:59:33.504  INFO 10808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8054 (http)
+2024-06-13 14:59:33.524  INFO 10808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-13 14:59:33.526  INFO 10808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-06-13 14:59:33.731  INFO 10808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-13 14:59:33.731  INFO 10808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4147 ms
+2024-06-13 14:59:34.611  INFO 10808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-06-13 14:59:34.737  INFO 10808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
+2024-06-13 14:59:34.740  INFO 10808 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-06-13 14:59:34.968  INFO 10808 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-06-13 14:59:35.124  INFO 10808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-13 14:59:36.349 ERROR 10808 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+org.postgresql.util.PSQLException: FATAL: database "pkdb2" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2664) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:147) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:273) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.makeConnection(Driver.java:465) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.connect(Driver.java:264) ~[postgresql-42.2.23.jar:42.2.23]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:903) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:934) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:437) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:934) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.3.jar:2.5.3]
+	at com.innobitsysytems.ipis.IpisApplication.main(IpisApplication.java:20) ~[classes/:na]
+
+2024-06-13 14:59:36.353  WARN 10808 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : FATAL: database "pkdb2" does not exist
+2024-06-13 14:59:36.365  INFO 10808 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2024-06-13 14:59:36.386  INFO 10808 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2024-06-13 14:59:36.393  INFO 10808 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1c3d9e28
+2024-06-13 14:59:38.254  INFO 10808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-13 14:59:39.345 ERROR 10808 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+org.postgresql.util.PSQLException: FATAL: database "pkdb2" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2664) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:147) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:273) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.makeConnection(Driver.java:465) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.connect(Driver.java:264) ~[postgresql-42.2.23.jar:42.2.23]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:938) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:437) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:934) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.3.jar:2.5.3]
+	at com.innobitsysytems.ipis.IpisApplication.main(IpisApplication.java:20) ~[classes/:na]
+
+2024-06-13 14:59:39.349  WARN 10808 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 3D000
+2024-06-13 14:59:39.350 ERROR 10808 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: database "pkdb2" does not exist
+2024-06-13 14:59:39.357 ERROR 10808 --- [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2024-06-13 14:59:39.358 ERROR 10808 --- [main] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.innobitsysytems.ipis.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot create inner bean '(inner bean)#781dbe44' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#781dbe44': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+2024-06-13 14:59:39.380  INFO 10808 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-13 14:59:39.384  WARN 10808 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2024-06-13 14:59:39.398  INFO 10808 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-06-13 14:59:39.416 ERROR 10808 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:163) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.3.jar:2.5.3]
+	at com.innobitsysytems.ipis.IpisApplication.main(IpisApplication.java:20) ~[classes/:na]
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:450) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:199) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:182) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:160) ~[spring-boot-2.5.3.jar:2.5.3]
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.innobitsysytems.ipis.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot create inner bean '(inner bean)#781dbe44' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#781dbe44': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:212) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:175) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:170) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:155) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:260) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.5.3.jar:2.5.3]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5219) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1388) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:921) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:263) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:437) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:934) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123) ~[spring-boot-2.5.3.jar:2.5.3]
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.innobitsysytems.ipis.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot create inner bean '(inner bean)#781dbe44' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#781dbe44': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1413) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 55 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.innobitsysytems.ipis.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot create inner bean '(inner bean)#781dbe44' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#781dbe44': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:389) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1689) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1434) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 69 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#781dbe44': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 82 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 90 common frames omitted
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845) ~[spring-beans-5.3.9.jar:5.3.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-5.3.9.jar:5.3.9]
+	... 97 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:69) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:40) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:65) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:59) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:132) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:96) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:938) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.9.jar:5.3.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.9.jar:5.3.9]
+	... 101 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: database "pkdb2" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2552) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.readStartupMessages(QueryExecutorImpl.java:2664) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.QueryExecutorImpl.<init>(QueryExecutorImpl.java:147) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:273) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:51) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.makeConnection(Driver.java:465) ~[postgresql-42.2.23.jar:42.2.23]
+	at org.postgresql.Driver.connect(Driver.java:264) ~[postgresql-42.2.23.jar:42.2.23]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.0.Final.jar:5.4.0.Final]
+	... 115 common frames omitted
+
+2024-06-13 15:01:03.950  INFO 26272 --- [main] c.innobitsysytems.ipis.IpisApplication   : Starting IpisApplication using Java 17.0.1 on 01HW2104319 with PID 26272 (C:\Users\2606537\Documents\ipis\ipis\target\classes started by 2606537 in C:\Users\2606537\Documents\ipis\ipis)
+2024-06-13 15:01:03.952  INFO 26272 --- [main] c.innobitsysytems.ipis.IpisApplication   : No active profile set, falling back to default profiles: default
+2024-06-13 15:01:04.030  INFO 26272 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 15:01:06.076  INFO 26272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-13 15:01:06.729  INFO 26272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 640 ms. Found 66 JPA repository interfaces.
+2024-06-13 15:01:07.260  INFO 26272 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-06-13 15:01:07.291  INFO 26272 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-06-13 15:01:07.452  INFO 26272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:01:07.466  INFO 26272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:01:07.469  INFO 26272 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:01:08.027  INFO 26272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8054 (http)
+2024-06-13 15:01:08.040  INFO 26272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-13 15:01:08.040  INFO 26272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-06-13 15:01:08.229  INFO 26272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-13 15:01:08.229  INFO 26272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4198 ms
+2024-06-13 15:01:09.034  INFO 26272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-06-13 15:01:09.152  INFO 26272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
+2024-06-13 15:01:09.156  INFO 26272 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-06-13 15:01:09.351  INFO 26272 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-06-13 15:01:09.471  INFO 26272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-13 15:01:09.704  INFO 26272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-13 15:01:09.730  INFO 26272 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2024-06-13 15:01:10.033  INFO 26272 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@775edae0
+2024-06-13 15:01:12.714  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-13 15:01:12.715  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_5y1xwhgv5ehf46x8iako7g09n" of relation "announcement_master_data" does not exist, skipping
+2024-06-13 15:01:12.723  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-13 15:01:12.723  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_6dotkott2kjsp8vw4d0m25fb7" of relation "users" does not exist, skipping
+2024-06-13 15:01:12.729  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-06-13 15:01:12.729  WARN 26272 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : constraint "uk_p0ph17e6328j6uu1cr2tyd8vb" of relation "users" does not exist, skipping
+2024-06-13 15:01:12.779  INFO 26272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-13 15:01:12.781  INFO 26272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-13 15:01:13.264  INFO 26272 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2024-06-13 15:01:13.564  WARN 26272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-13 15:01:15.144  INFO 26272 --- [main] c.i.ipis.library.TcpClient               : Post Contruct of TCPClient
+2024-06-13 15:01:16.128  INFO 26272 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-13 15:01:16.161  INFO 26272 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@211b2a2c, org.springframework.security.web.context.SecurityContextPersistenceFilter@fc6c83a, org.springframework.security.web.header.HeaderWriterFilter@29b23bc4, org.springframework.web.filter.CorsFilter@4b4a5691, org.springframework.security.web.authentication.logout.LogoutFilter@4631a6a9, com.innobitsysytems.ipis.security.JwtAuthenticationFilter@1227862a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@585bfd45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b6182cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e236542, org.springframework.security.web.session.SessionManagementFilter@5e7026b9, org.springframework.security.web.access.ExceptionTranslationFilter@5df9d890, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17236e87]
+2024-06-13 15:01:16.701  INFO 26272 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-06-13 15:01:16.701  INFO 26272 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2024-06-13 15:01:16.702  INFO 26272 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2024-06-13 15:01:16.741  INFO 26272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8054 (http) with context path ''
+2024-06-13 15:01:16.743  INFO 26272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-06-13 15:01:16.744  INFO 26272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@372ea7fa]]
+2024-06-13 15:01:16.744  INFO 26272 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-06-13 15:01:16.762  INFO 26272 --- [main] c.innobitsysytems.ipis.IpisApplication   : Started IpisApplication in 13.448 seconds (JVM running for 14.225)
+2024-06-13 15:02:16.201  INFO 26272 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-06-13 15:03:47.747  INFO 20032 --- [main] c.innobitsysytems.ipis.IpisApplication   : Starting IpisApplication using Java 17.0.1 on 01HW2104319 with PID 20032 (C:\Users\2606537\Documents\ipis\ipis\target\classes started by 2606537 in C:\Users\2606537\Documents\ipis\ipis)
+2024-06-13 15:03:47.750  INFO 20032 --- [main] c.innobitsysytems.ipis.IpisApplication   : No active profile set, falling back to default profiles: default
+2024-06-13 15:03:47.834  INFO 20032 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 15:03:49.963  INFO 20032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-13 15:03:50.639  INFO 20032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 662 ms. Found 66 JPA repository interfaces.
+2024-06-13 15:03:51.142  INFO 20032 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-06-13 15:03:51.179  INFO 20032 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-06-13 15:03:51.335  INFO 20032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:03:51.350  INFO 20032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:03:51.352  INFO 20032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:03:51.938  INFO 20032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8054 (http)
+2024-06-13 15:03:51.958  INFO 20032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-13 15:03:51.959  INFO 20032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-06-13 15:03:52.169  INFO 20032 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-13 15:03:52.169  INFO 20032 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4334 ms
+2024-06-13 15:03:53.045  INFO 20032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-06-13 15:03:53.147  INFO 20032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
+2024-06-13 15:03:53.150  INFO 20032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-06-13 15:03:53.377  INFO 20032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-06-13 15:03:53.509  INFO 20032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-13 15:03:53.771  INFO 20032 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-13 15:03:53.792  INFO 20032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2024-06-13 15:03:54.096  INFO 20032 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@173cfb01
+2024-06-13 15:03:56.232  INFO 20032 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-13 15:03:56.234  INFO 20032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-13 15:03:56.777  INFO 20032 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2024-06-13 15:03:57.087  WARN 20032 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-13 15:03:58.677  INFO 20032 --- [main] c.i.ipis.library.TcpClient               : Post Contruct of TCPClient
+2024-06-13 15:03:59.662  INFO 20032 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-13 15:03:59.699  INFO 20032 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55bd9d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@77a38cec, org.springframework.security.web.header.HeaderWriterFilter@b8812fb, org.springframework.web.filter.CorsFilter@a4f14c9, org.springframework.security.web.authentication.logout.LogoutFilter@321b2469, com.innobitsysytems.ipis.security.JwtAuthenticationFilter@7ef6a063, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29e94753, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@30ff3726, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b81283, org.springframework.security.web.session.SessionManagementFilter@2aaa5122, org.springframework.security.web.access.ExceptionTranslationFilter@3dc455f6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5707ce70]
+2024-06-13 15:04:00.263  INFO 20032 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-06-13 15:04:00.263  INFO 20032 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2024-06-13 15:04:00.264  INFO 20032 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2024-06-13 15:04:00.319  INFO 20032 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8054 (http) with context path ''
+2024-06-13 15:04:00.321  INFO 20032 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-06-13 15:04:00.321  INFO 20032 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4b330722]]
+2024-06-13 15:04:00.322  INFO 20032 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-06-13 15:04:00.343  INFO 20032 --- [main] c.innobitsysytems.ipis.IpisApplication   : Started IpisApplication in 13.272 seconds (JVM running for 14.012)
+2024-06-13 15:04:59.734  INFO 20032 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-06-13 15:05:49.824  INFO 11436 --- [main] c.innobitsysytems.ipis.IpisApplication   : Starting IpisApplication using Java 17.0.1 on 01HW2104319 with PID 11436 (C:\Users\2606537\Documents\ipis\ipis\target\classes started by 2606537 in C:\Users\2606537\Documents\ipis\ipis)
+2024-06-13 15:05:49.825  INFO 11436 --- [main] c.innobitsysytems.ipis.IpisApplication   : No active profile set, falling back to default profiles: default
+2024-06-13 15:05:49.902  INFO 11436 --- [main] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-13 15:05:51.835  INFO 11436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-13 15:05:52.472  INFO 11436 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 624 ms. Found 66 JPA repository interfaces.
+2024-06-13 15:05:52.971  INFO 11436 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2024-06-13 15:05:52.995  INFO 11436 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2024-06-13 15:05:53.159  INFO 11436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:05:53.174  INFO 11436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:05:53.176  INFO 11436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-06-13 15:05:53.740  INFO 11436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8054 (http)
+2024-06-13 15:05:53.757  INFO 11436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-13 15:05:53.758  INFO 11436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-06-13 15:05:53.977  INFO 11436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-13 15:05:53.977  INFO 11436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4073 ms
+2024-06-13 15:05:54.736  INFO 11436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-06-13 15:05:54.842  INFO 11436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.0.Final}
+2024-06-13 15:05:54.845  INFO 11436 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-06-13 15:05:55.041  INFO 11436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2024-06-13 15:05:55.161  INFO 11436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-13 15:05:55.412  INFO 11436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-13 15:05:55.445  INFO 11436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2024-06-13 15:05:55.780  INFO 11436 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@16e5344c
+2024-06-13 15:05:58.138  INFO 11436 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-06-13 15:05:58.141  INFO 11436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-13 15:05:58.702  INFO 11436 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2024-06-13 15:05:59.007  WARN 11436 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-13 15:06:00.539  INFO 11436 --- [main] c.i.ipis.library.TcpClient               : Post Contruct of TCPClient
+2024-06-13 15:06:01.526  INFO 11436 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2024-06-13 15:06:01.558  INFO 11436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@112e72ea, org.springframework.security.web.context.SecurityContextPersistenceFilter@f5a1b27, org.springframework.security.web.header.HeaderWriterFilter@1ff02deb, org.springframework.web.filter.CorsFilter@259c7ff3, org.springframework.security.web.authentication.logout.LogoutFilter@2e5affb3, com.innobitsysytems.ipis.security.JwtAuthenticationFilter@7fd8f21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1916d0eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aaa5122, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30865a1, org.springframework.security.web.session.SessionManagementFilter@b8812fb, org.springframework.security.web.access.ExceptionTranslationFilter@3cc0efa2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e00ad90]
+2024-06-13 15:06:02.070  INFO 11436 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2024-06-13 15:06:02.071  INFO 11436 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2024-06-13 15:06:02.072  INFO 11436 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2024-06-13 15:06:02.128  INFO 11436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8054 (http) with context path ''
+2024-06-13 15:06:02.130  INFO 11436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-06-13 15:06:02.130  INFO 11436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@67ee26af]]
+2024-06-13 15:06:02.131  INFO 11436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-06-13 15:06:02.153  INFO 11436 --- [main] c.innobitsysytems.ipis.IpisApplication   : Started IpisApplication in 12.994 seconds (JVM running for 13.78)
+2024-06-13 15:07:01.594  INFO 11436 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-06-13 15:37:01.605  INFO 11436 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 1, queued tasks = 0, completed tasks = 1]
+2024-06-13 17:21:05.480  WARN 11436 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h26m9s277ms938µs).
+2024-06-13 17:32:40.783  INFO 11436 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]

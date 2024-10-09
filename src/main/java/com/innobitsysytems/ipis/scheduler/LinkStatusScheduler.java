@@ -35,7 +35,7 @@ public class LinkStatusScheduler {
 	@Autowired 
 	LinkStatusRepository linkStatusRepository;
 	
-@Scheduled(fixedRate = 1000)
+//@Scheduled(fixedRate = 1000)
     public void pingDevice(){
 		
 		List<Device> data = deviceRepository.findAll();
